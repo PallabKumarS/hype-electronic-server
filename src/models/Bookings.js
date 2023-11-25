@@ -43,10 +43,10 @@ const bookingSchema = new Schema(
       required: true,
     },
     serviceArea1: {
-      type: Schema.Types.Decimal128,
+      type: Schema.Types.Number,
     },
     serviceArea2: {
-      type: Schema.Types.Decimal128,
+      type: Schema.Types.Number,
     },
     locationText: {
       type: String,
