@@ -6,7 +6,8 @@ const createBooking = async (req, res, next) => {
       return res.status(403).send({ message: "Forbidden Access" });
     }
     const booking = req.body;
-    const result = await Booking.insertOne(booking);
+    console.log("hit", booking);
+    const result = await Booking.create(booking);
     res.status(200).send(result);
   } catch (err) {
     next(err);
